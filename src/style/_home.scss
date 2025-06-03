@@ -1,0 +1,171 @@
+.jewelry-store {
+  font-family: 'Serif', sans-serif;
+  color: #443221;
+  background-color: #fdf8f2;
+
+  .hero-section {
+    background: url('https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80') no-repeat center center/cover;
+    padding: 6rem 2rem;
+    color: white;
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 2rem;
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4rem;
+
+        .logo {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+
+        .nav-links {
+          list-style: none;
+          display: flex;
+          gap: 1.5rem;
+
+          li {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .hero-content {
+        max-width: 500px;
+
+        h1 {
+          font-size: 3rem;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          margin: 0.5rem 0;
+        }
+      }
+    }
+  }
+
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+    background-color: #fff;
+
+    .feature {
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+
+  .refinement {
+    display: flex;
+    padding: 4rem 2rem;
+    gap: 2rem;
+    align-items: center;
+
+    .image img {
+      width: 300px;
+      border-radius: 1rem;
+    }
+
+    .text {
+      max-width: 500px;
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .collection {
+    padding: 4rem 2rem;
+    background-color: #fff;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .items {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+
+      img {
+        width: 100%;
+        border-radius: 0.5rem;
+      }
+
+      p {
+        font-weight: bold;
+      }
+
+      span {
+        color: #888;
+      }
+    }
+  }
+
+  .choose-type {
+    display: flex;
+    padding: 4rem 2rem;
+    align-items: center;
+    gap: 2rem;
+
+    .video-preview {
+      position: relative;
+
+      img {
+        width: 300px;
+        border-radius: 1rem;
+      }
+
+      .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.7);
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+    }
+
+    .type-options {
+      h2 {
+        margin-bottom: 1rem;
+      }
+
+      .types {
+        display: flex;
+        gap: 1rem;
+
+        .type {
+          padding: 1rem;
+          background-color: #fff;
+          border-radius: 1rem;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          text-align: center;
+          min-width: 80px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    background-color: #eee1cf;
+    padding: 2rem;
+
+    .logos {
+      display: flex;
+      justify-content: space-around;
+      font-weight: bold;
+    }
+  }
+} 
