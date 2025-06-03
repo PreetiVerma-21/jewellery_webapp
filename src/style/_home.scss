@@ -4,13 +4,20 @@
   background-color: #fdf8f2;
 
   .hero-section {
-    background: url('https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80') no-repeat center center/cover;
+    background: url('../utilities/images/heroSection.jpg') no-repeat center center/cover;
     padding: 6rem 2rem;
     color: white;
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
     .overlay {
       background-color: rgba(0, 0, 0, 0.4);
       padding: 2rem;
+      border-radius: 2rem;
 
       .navbar {
         display: flex;
@@ -53,8 +60,9 @@
     display: flex;
     justify-content: space-around;
     padding: 2rem 0;
-    background-color: #fff;
-
+    background-color: #efdac7;
+    margin-top: 2rem;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     .feature {
       text-align: center;
       font-weight: bold;
@@ -66,6 +74,8 @@
     padding: 4rem 2rem;
     gap: 2rem;
     align-items: center;
+    background-color: rgb(252, 245, 241);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
     .image img {
       width: 300px;
@@ -88,34 +98,49 @@
 
     h2 {
       text-align: center;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+        font-size: 2.5rem;
+        color: #7a522d;
+        font-family: 'Times New Roman', Times, serif;
     }
 
-    .items {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-
-      img {
+   
+    .collection-card{
+        margin-bottom: 20px !important;
+        border: 1px solid #b9b9b9;
+        border-radius: 10px;
+        // width: 5rem;
+         img {
         width: 100%;
-        border-radius: 0.5rem;
+        // border-radius: 0.5rem;
       }
-
+      .collection-desc{
+        padding: 1rem;
+      
       p {
         font-weight: bold;
+        font-size: 1.3rem;
+        color: #7a522d;
+        font-family: 'Times New Roman', Times, serif;
       }
 
       span {
         color: #888;
       }
     }
+      
+    }
+      
   }
 
   .choose-type {
     display: flex;
-    padding: 4rem 2rem;
+    padding: 2rem 1rem;
     align-items: center;
     gap: 2rem;
+    background-color: #f5eae0;
+    box-shadow: 0 20px 10px -20px rgba(0,0,0,0.45) inset, 0 -20px 10px -20px rgba(0,0,0,0.45) inset;
 
     .video-preview {
       position: relative;

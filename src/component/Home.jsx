@@ -1,16 +1,20 @@
 import React from "react";
-import { Button, Card } from "antd";
+import { Button, Row, Col} from "antd";
+import sectionImg from "../utilities/images/footer.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Home =()=> {
+    const navigate = useNavigate();
+
   return (
     <div className="jewelry-store">
       <header className="hero-section">
         <div className="overlay">
           <nav className="navbar">
-            <div className="logo">Shimmer</div>
+            <div className="logo">Ornaments</div>
             <ul className="nav-links">
-              <li>Home</li>
-              <li>About Us</li>
+              <li >Home</li>
+              <li onClick={()=>navigate("/about")}>About Us</li>
               <li>Collections</li>
               <li>Pages</li>
               <li><Button>Contact Us</Button></li>
@@ -18,9 +22,9 @@ const Home =()=> {
           </nav>
           <div className="hero-content">
             <h1>Our Luxury Collections</h1>
-            <p>// Shimmer Jewelry Store</p>
+            <p>Shimmer Jewelry Store</p>
             <p>Lorem ipsum dolor sit amet...</p>
-            <Button>Let’s Get Started</Button>
+            <Button>Let's Get Started</Button>
           </div>
         </div>
       </header>
@@ -34,7 +38,7 @@ const Home =()=> {
 
       <section className="refinement">
         <div className="image">
-          <img src="/img/model-glasses.jpg" alt="Model" />
+          <img src={sectionImg} alt="Model" />
         </div>
         <div className="text">
           <h2>The Art Of Radiant Refinement</h2>
@@ -45,34 +49,46 @@ const Home =()=> {
 
       <section className="collection">
         <h2>Our Collection</h2>
-        <div className="items">
-          <Card>
+        <Row gutter={10}>
+            <Col span={8} sm={24} md={8} lg={8} xs={24}>
+          <div className="collection-card">
             {/* <CardContent> */}
-              <img src="/img/gold-earring.jpg" alt="Gold Earring" />
+              <img src={sectionImg} alt="Gold Earring" />
+              <div className="collection-desc">
               <p>Gold Earring</p>
               <span>$240.00</span>
+              </div>
             {/* </CardContent> */}
-          </Card>
-          <Card>
+          </div>
+          </Col>
+           <Col span={8} sm={24} md={8} lg={8} xs={24}>
+          <div className="collection-card">
             {/* <CardContent> */}
-              <img src="/img/diamond-ring.jpg" alt="Diamond Ring" />
+              <img src={sectionImg} alt="Diamond Ring" />
+              <div className="collection-desc">
               <p>Diamond Ring</p>
               <span>$240.00</span>
+              </div>
             {/* </CardContent> */}
-          </Card>
-          <Card>
+          </div>
+          </Col>
+           <Col span={8} sm={24} md={8} lg={8} xs={24}>
+          <div className="collection-card">
             {/* <CardContent> */}
-              <img src="/img/gold-necklace.jpg" alt="Gold Necklace" />
+              <img src={sectionImg} alt="Gold Necklace" />
+              <div className="collection-desc">
               <p>Gold Necklace</p>
               <span>$240.00</span>
+              </div>
             {/* </CardContent> */}
-          </Card>
-        </div>
+          </div>
+          </Col>
+        </Row>
       </section>
 
       <section className="choose-type">
         <div className="video-preview">
-          <img src="/img/hand-video.jpg" alt="Hand with jewelry" />
+          <img src={sectionImg} alt="Hand with jewelry" />
           <Button className="play-button">▶</Button>
         </div>
         <div className="type-options">
@@ -86,7 +102,7 @@ const Home =()=> {
         </div>
       </section>
 
-      <footer className="footer">
+      {/* <footer className="footer">
         <div className="logos">
           <span>logoipsum</span>
           <span>logoipsum</span>
@@ -94,7 +110,8 @@ const Home =()=> {
           <span>logoipsum</span>
           <span>logoipsum</span>
         </div>
-      </footer>
+      </footer> */}
+      {/* <Footer/> */}
     </div>
   );
 }
