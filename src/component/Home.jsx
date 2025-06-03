@@ -11,14 +11,14 @@ const Home =()=> {
       <header className="hero-section">
         <div className="overlay">
           <nav className="navbar">
-            <div className="logo">Ornaments</div>
-            <ul className="nav-links">
+            {/* <div className="logo">Ornaments</div> */}
+            {/* <ul className="nav-links">
               <li >Home</li>
               <li onClick={()=>navigate("/about")}>About Us</li>
               <li>Collections</li>
               <li>Pages</li>
               <li><Button>Contact Us</Button></li>
-            </ul>
+            </ul> */}
           </nav>
           <div className="hero-content">
             <h1>Our Luxury Collections</h1>
