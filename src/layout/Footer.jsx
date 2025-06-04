@@ -8,9 +8,9 @@ const Footer = () => {
     <span>Ornamen</span>ts
   </div>
   <div className="footer-links">
-    <a href="#">About</a>
-    <a href="#">Jewellery</a>
-    <a href="#">Contact</a>
+    <a href="#">About Us</a>
+    <a href="#">Collections</a>
+    <a href="#">Contact Us</a>
     <a href="#">Blog</a>
   </div>
   <div className="footer-social">

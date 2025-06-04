@@ -1,0 +1,42 @@
+// #f8efe7
+
+// Custom styles for Ant Design Menu
+
+.ant-menu-horizontal {
+  background: #fffbe6;
+  border-bottom: 2px solid #dba063;
+  box-shadow: 0 2px 8px rgba(219, 160, 99, 0.08);
+
+  .ant-menu-item {
+    color: #443221;
+    font-family: 'Times New Roman', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0 2rem;
+    transition: background 0.3s, color 0.3s;
+
+    &:hover,
+    &.ant-menu-item-selected {
+    //   background: #f5cfa6;
+      color: #d8831b;
+      border-radius: 8px 8px 0 0;
+    //   border-bottom: 2px solid #d8831b;
+    //   border: 1px solid #5e380b;
+    }
+//     &.ant-menu-submenu-selected::after {
+//     border-bottom-width: 3px !important;
+//     border-bottom-color: #d8831b !important;
+// }
+
+    .anticon {
+      color: #dba063;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.ant-menu-light.ant-menu-horizontal > .ant-menu-submenu-selected::after{
+    border-bottom-width: 3px !important;
+    border-bottom-color: #d8831b !important;
+}
+

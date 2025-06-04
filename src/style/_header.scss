@@ -1,6 +1,12 @@
+.header-cont-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      background-color: rgb(94, 56, 11);
+      padding: 0.3rem 1rem 0.3rem 1rem;
 .header-cont{
    height: 2.5rem;
-   background-color: rgb(94, 56, 11);
+ 
    color: #ffb347;
    font-family: 'Times New Roman', Times, serif;
    font-size: 2rem;
@@ -9,4 +15,5 @@
    span{
     color: white;
    }
+}
 }

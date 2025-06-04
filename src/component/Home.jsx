@@ -2,7 +2,9 @@ import React from "react";
 import { Button, Row, Col} from "antd";
 import sectionImg from "../utilities/images/footer.jpg";
 import { useNavigate } from "react-router-dom";
-
+import collection1 from "../utilities/images/earring.jpg";
+import collection2 from "../utilities/images/ring.jpg";
+import collection3 from "../utilities/images/necklace.jpg";
 const Home =()=> {
     const navigate = useNavigate();
 
@@ -11,14 +13,6 @@ const Home =()=> {
       <header className="hero-section">
         <div className="overlay">
           <nav className="navbar">
-            {/* <div className="logo">Ornaments</div> */}
-            {/* <ul className="nav-links">
-              <li >Home</li>
-              <li onClick={()=>navigate("/about")}>About Us</li>
-              <li>Collections</li>
-              <li>Pages</li>
-              <li><Button>Contact Us</Button></li>
-            </ul> */}
           </nav>
           <div className="hero-content">
             <h1>Our Luxury Collections</h1>
@@ -53,7 +47,7 @@ const Home =()=> {
             <Col span={8} sm={24} md={8} lg={8} xs={24}>
           <div className="collection-card">
             {/* <CardContent> */}
-              <img src={sectionImg} alt="Gold Earring" />
+              <img src={collection1} alt="Gold Earring" />
               <div className="collection-desc">
               <p>Gold Earring</p>
               <span>$240.00</span>
@@ -64,7 +58,7 @@ const Home =()=> {
            <Col span={8} sm={24} md={8} lg={8} xs={24}>
           <div className="collection-card">
             {/* <CardContent> */}
-              <img src={sectionImg} alt="Diamond Ring" />
+              <img src={collection2} alt="Diamond Ring" />
               <div className="collection-desc">
               <p>Diamond Ring</p>
               <span>$240.00</span>
@@ -75,7 +69,7 @@ const Home =()=> {
            <Col span={8} sm={24} md={8} lg={8} xs={24}>
           <div className="collection-card">
             {/* <CardContent> */}
-              <img src={sectionImg} alt="Gold Necklace" />
+              <img src={collection3} alt="Gold Necklace" />
               <div className="collection-desc">
               <p>Gold Necklace</p>
               <span>$240.00</span>

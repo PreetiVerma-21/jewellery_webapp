@@ -9,7 +9,7 @@ const NonAuthLayout = () => {
     <>
     <Header/>
     <NonAuthMenu/>
-    <main>
+    <main style={{minHeight: "60vh"}}>
         <Outlet/>
     </main>
     <Footer/>
