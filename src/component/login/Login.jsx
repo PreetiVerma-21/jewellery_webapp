@@ -1,8 +1,13 @@
 import React from 'react';
 import { Button, Input } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
+    const navigate = useNavigate();
+    const submit =()=>{
+        console.log("submit data")
+    }
   return (
     <div className="login-container">
       <form className="login-form">

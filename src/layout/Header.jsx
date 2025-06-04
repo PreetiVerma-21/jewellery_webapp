@@ -11,7 +11,7 @@ const Header = () => {
       </div>
       <div className="login-section">
         <span id="signup-btn">
-          <Button>Sign Up</Button>
+          <Button onClick={()=>navigate("/signup")}>Sign Up</Button>
         </span>
         <span id="login-btn">
           <Button onClick={()=>navigate("/login")}>Login</Button>

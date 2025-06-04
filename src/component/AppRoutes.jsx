@@ -8,6 +8,7 @@ import Blog from './Blog'
 import ContactUs from './ContactUs'
 import PageNotFound from './PageNotFound'
 import Login from './login/Login'
+import SignUp from './login/SignUp'
 
 const AppRoutes = () => {
   return (
@@ -20,6 +21,7 @@ const AppRoutes = () => {
           <Route path="blog" element={<Blog/>}/>
           <Route path="contactUs" element={<ContactUs/>}/>
           <Route path="login" element={<Login/>}/>
+          <Route path="signup" element={<SignUp/>}/>
         </Route>
           <Route path="*" element={<PageNotFound/>}/>
       </Routes>
