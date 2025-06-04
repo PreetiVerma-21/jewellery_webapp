@@ -1,102 +1,102 @@
 // Custom styles for Ant Design Button
-#login-btn{
-.ant-btn {
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 600;
-  border-radius: 0 1rem 1rem 0;
-  padding: 0.6rem 2rem;
-  font-size: 1.1rem;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-  box-shadow: 0 2px 8px rgba(219, 160, 99, 0.08);
+#login-btn {
+	.ant-btn {
+		font-family: "Times New Roman", Times, serif;
+		font-weight: 600;
+		border-radius: 0 1rem 1rem 0;
+		padding: 0.6rem 2rem;
+		font-size: 1.1rem;
+		transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+		box-shadow: 0 2px 8px rgba(219, 160, 99, 0.08);
 
-  &.ant-btn-primary {
-    background: #dba063;
-    border-color: #dba063;
-    color: #fff;
+		&.ant-btn-primary {
+			background: #dba063;
+			border-color: #dba063;
+			color: #fff;
 
-    &:hover,
-    &:focus {
-      background: #915b19;
-      border-color: #915b19;
-      color: #fff;
-    }
-  }
+			&:hover,
+			&:focus {
+				background: #915b19;
+				border-color: #915b19;
+				color: #fff;
+			}
+		}
 
-  &.ant-btn-default {
-    background: #fffbe6;
-    border-color: #dba063;
-    color: #dba063;
+		&.ant-btn-default {
+			background: #fffbe6;
+			border-color: #dba063;
+			color: #dba063;
 
-    &:hover,
-    &:focus {
-      background: #f5e3c3;
-      border-color: #915b19;
-      color: #915b19;
-    }
-  }
+			&:hover,
+			&:focus {
+				background: #ffb347;
+				border-color: #915b19;
+				color: white;
+			}
+		}
 
-  &.ant-btn-dangerous {
-    background: #fff0f0;
-    border-color: #ff7875;
-    color: #ff7875;
+		&.ant-btn-dangerous {
+			background: #fff0f0;
+			border-color: #ff7875;
+			color: #ff7875;
 
-    &:hover,
-    &:focus {
-      background: #ff7875;
-      color: #fff;
-      border-color: #ff7875;
-    }
-  }
+			&:hover,
+			&:focus {
+				background: #ff7875;
+				color: #fff;
+				border-color: #ff7875;
+			}
+		}
+	}
 }
-}
 
-#signup-btn{
-.ant-btn {
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 600;
-  border-radius: 1rem 0 0 1rem;
-  padding: 0.6rem 2rem;
-  font-size: 1.1rem;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-  box-shadow: 0 2px 8px rgba(219, 160, 99, 0.08);
+#signup-btn {
+	.ant-btn {
+		font-family: "Times New Roman", Times, serif;
+		font-weight: 600;
+		border-radius: 1rem 0 0 1rem;
+		padding: 0.6rem 2rem;
+		font-size: 1.1rem;
+		transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+		box-shadow: 0 2px 8px rgba(219, 160, 99, 0.08);
 
-  &.ant-btn-primary {
-    background: #dba063;
-    border-color: #dba063;
-    color: #fff;
+		&.ant-btn-primary {
+			background: #dba063;
+			border-color: #dba063;
+			color: #fff;
 
-    &:hover,
-    &:focus {
-      background: #b87a2c;
-      border-color: #b87a2c;
-      color: #fff;
-    }
-  }
+			&:hover,
+			&:focus {
+				background: #b87a2c;
+				border-color: #b87a2c;
+				color: #fff;
+			}
+		}
 
-  &.ant-btn-default {
-    background: #fffbe6;
-    border-color: #dba063;
-    color: #dba063;
+		&.ant-btn-default {
+			background: #fffbe6;
+			border-color: #dba063;
+			color: #dba063;
 
-    &:hover,
-    &:focus {
-      background: #f5e3c3;
-      border-color: #b87a2c;
-      color: #b87a2c;
-    }
-  }
+			&:hover,
+			&:focus {
+				background: #ffb347;
+				border-color: #b87a2c;
+				color: white;
+			}
+		}
 
-  &.ant-btn-dangerous {
-    background: #fff0f0;
-    border-color: #ff7875;
-    color: #ff7875;
+		&.ant-btn-dangerous {
+			background: #fff0f0;
+			border-color: #ff7875;
+			color: #ff7875;
 
-    &:hover,
-    &:focus {
-      background: #ff7875;
-      color: #fff;
-      border-color: #ff7875;
-    }
-  }
-}
+			&:hover,
+			&:focus {
+				background: #ff7875;
+				color: #fff;
+				border-color: #ff7875;
+			}
+		}
+	}
 }
