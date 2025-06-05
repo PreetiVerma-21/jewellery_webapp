@@ -1,0 +1,125 @@
+.aboutus-container {
+//   min-height: 80vh;
+  padding: 2.5rem 1rem 2rem 1rem;
+//   background: linear-gradient(120deg, #fffbe6 0%, #fdf6e3 100%);
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutus-hero {
+  text-align: center;
+  margin-bottom: 2.5rem;
+
+  h1 {
+    color: #987142;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.05em;
+  }
+
+  .aboutus-tagline {
+    color: #7c6a4d;
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+}
+
+.aboutus-content {
+  display: flex;
+  gap: 2.5rem;
+  max-width: 1000px;
+  width: 100%;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.aboutus-image {
+  flex: 1 1 300px;
+  min-width: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    max-width: 340px;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 24px rgba(219, 160, 99, 0.12);
+    border: 2px solid #dba063;
+    background: #fffbe6;
+  }
+}
+
+.aboutus-text {
+  flex: 2 1 350px;
+  min-width: 260px;
+  color: #443221;
+
+  h2 {
+    color: #987142;
+    font-size: 1.3rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+
+  }
+
+  p, ul {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+  }
+
+  ul {
+    padding-left: 1.2rem;
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.aboutus-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+
+  h3 {
+    color: #987142;
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+    font-weight: 600;
+  }
+
+  .aboutus-socials {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+
+    a {
+      color: #dba063;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.2s;
+
+      &:hover {
+        color: #b87a2c;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .aboutus-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .aboutus-image img {
+    max-width: 90vw;
+  }
+}

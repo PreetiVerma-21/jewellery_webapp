@@ -30,35 +30,36 @@ const Home =()=> {
         <div className="feature">Highest Quality</div>
       </section>
 
-      <section className="refinement">
-        <div className="image">
+      <Row className="refinement">
+        <Col className="image">
           <img src={sectionImg} alt="Model" />
-        </div>
-        <div className="text">
+        </Col>
+        <Col className="text">
           <h2>The Art Of Radiant Refinement</h2>
           <p>Lorem ipsum dolor sit amet consectetur...</p>
           <Button>Learn More</Button>
-        </div>
-      </section>
+        </Col>
+      </Row>
 
       <section className="collection">
         <h2>Our Collection</h2>
+       
         <Row gutter={10}>
-            <Col span={8} sm={24} md={8} lg={8} xs={24}>
+            <Col span={8} sm={24} md={8} lg={8} xs={24} className="card-col">
           <div className="collection-card">
             {/* <CardContent> */}
-              <img src={collection1} alt="Gold Earring" />
-              <div className="collection-desc">
+              <img src={collection1} alt="Gold Earring"  height={200}/>
+              <div className="collection-desc"> 
               <p>Gold Earring</p>
               <span>$240.00</span>
               </div>
             {/* </CardContent> */}
           </div>
           </Col>
-           <Col span={8} sm={24} md={8} lg={8} xs={24}>
+           <Col span={8} sm={24} md={8} lg={8} xs={24} className="card-col">
           <div className="collection-card">
             {/* <CardContent> */}
-              <img src={collection2} alt="Diamond Ring" />
+              <img src={collection2} alt="Diamond Ring" height={200}/>
               <div className="collection-desc">
               <p>Diamond Ring</p>
               <span>$240.00</span>
@@ -66,10 +67,10 @@ const Home =()=> {
             {/* </CardContent> */}
           </div>
           </Col>
-           <Col span={8} sm={24} md={8} lg={8} xs={24}>
+           <Col span={8} sm={24} md={8} lg={8} xs={24} className="card-col">
           <div className="collection-card">
             {/* <CardContent> */}
-              <img src={collection3} alt="Gold Necklace" />
+              <img src={collection3} alt="Gold Necklace" height={200}/>
               <div className="collection-desc">
               <p>Gold Necklace</p>
               <span>$240.00</span>
@@ -78,14 +79,15 @@ const Home =()=> {
           </div>
           </Col>
         </Row>
+      
       </section>
 
-      <section className="choose-type">
-        <div className="video-preview">
+      <Row className="choose-type">
+        <Col className="video-preview">
           <img src={sectionImg} alt="Hand with jewelry" />
           <Button className="play-button">▶</Button>
-        </div>
-        <div className="type-options">
+        </Col>
+        <Col className="type-options">
           <h2>Choose The Type!</h2>
           <p>Lorem ipsum dolor sit amet consectetur...</p>
           <div className="types">
@@ -93,8 +95,8 @@ const Home =()=> {
             <div className="type">Necklace</div>
             <div className="type">Bracelet</div>
           </div>
-        </div>
-      </section>
+        </Col>
+      </Row>
 
       {/* <footer className="footer">
         <div className="logos">

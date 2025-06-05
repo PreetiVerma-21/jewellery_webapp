@@ -6,7 +6,7 @@
   background: linear-gradient(135deg, #fffbe6 0%, #fdf6e3 100%);
   font-family: 'Times New Roman', Times, serif;
   
-}
+
 
 .notfound-content {
   background: #fff;
@@ -14,10 +14,38 @@
   border-radius: 2rem;
   box-shadow: 0 8px 32px rgba(219, 160, 99, 0.15);
   text-align: center;
-  border: 2px solid #dba063;
+  border: 3px solid #dba063;
   box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.45) inset,
 						0 -20px 10px -20px rgba(0, 0, 0, 0.45) inset;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
 //   background: linear-gradient(135deg, #fffbe6 0%, #fdf6e3 100%);
+
+ .round {
+      content: "";
+      position: absolute;
+      bottom: -163px;
+      left: 140px;
+      width: 350px;
+      height: 350px;
+      background: radial-gradient(circle at 60% 40%, #f3e3b7 80%, #fffbe6 100%);
+      border-radius: 50%;
+      z-index: 0;
+      opacity: 0.55;
+    }
+    .round-small {
+      content: "";
+      position: absolute;
+      top: -5px;
+      right: -16px;
+      width: 60px;
+      height: 60px;
+      background: radial-gradient(circle at 60% 40%, #f3e3b7 80%, #fffbe6 100%);
+      border-radius: 50%;
+      z-index: 0;
+      opacity: 0.55;
+    }
 }
 
 .notfound-content h1 {
@@ -30,13 +58,17 @@
 
 .notfound-content h2 {
   font-size: 2rem;
-  color: #443221;
+  color: #894a10;
   margin-bottom: 1rem;
+  position: relative;
+    z-index: 1;
 }
 
 .notfound-content p {
-  color: #7c6a4d;
+  color: #956923;
   margin-bottom: 2rem;
+  position: relative;
+    z-index: 1;
 }
 
 .notfound-home-btn {
@@ -49,9 +81,14 @@
   font-weight: 600;
   font-size: 1.1rem;
   transition: background 0.2s;
-  box-shadow: 0 2px 8px rgba(219, 160, 99, 0.08);
+  // box-shadow: 0 2px 8px rgba(219, 160, 99, 0.08);
+  position: relative;
+  z-index: 1;
+   box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.45) inset,
+      0 -20px 10px -20px rgba(0, 0, 0, 0.45) inset;
 
   &:hover {
     background: #b87a2c;
   }
+}
 }

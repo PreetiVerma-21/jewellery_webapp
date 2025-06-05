@@ -11,6 +11,7 @@ const SignUp = () => {
   return (
     <div className="signup-container">
       <form className="signup-form">
+        <div className="round"></div>
         <h2>Create Account</h2>
         <p className="subtitle">Join the Jewellery Experience</p>
         <div className="input-group">
