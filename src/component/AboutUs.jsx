@@ -30,7 +30,7 @@ const AboutUs = () => {
           </ul>
           <h2>Visit Us</h2>
           <p>
-            Discover our collections online or visit our boutique at <b>123 Gold Street, Gem City</b>.
+            Discover our collections online or visit our boutique at <b>123 Gold Street, Gem City, India</b>.
           </p>
         </Col>
       </Row>
@@ -42,6 +42,14 @@ const AboutUs = () => {
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
         </div>
       </div>
+      {/* <div className='about-desc-section'>
+          <div className='about-inner-section'>
+            Discover our collections online or visit our boutique at <b>123 Gold Street, Gem City</b>.
+          </div>
+          <div>
+            
+          </div>
+      </div> */}
     </div>
   );
 };
