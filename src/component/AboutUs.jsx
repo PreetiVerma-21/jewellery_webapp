@@ -1,5 +1,6 @@
 import React from 'react';
 import aboutus from "../utilities/images/slider3.jpg";
+import { Col, Row } from 'antd';
 const AboutUs = () => {
   return (
     <div className="aboutus-container">
@@ -9,14 +10,14 @@ const AboutUs = () => {
           Where elegance meets craftsmanship.
         </p>
       </div>
-      <div className="aboutus-content">
-        <div className="aboutus-image">
+      <Row className="aboutus-content">
+        <Col className="aboutus-image">
           <img
             src={aboutus}
             alt="Jewellery Craft"
           />
-        </div>
-        <div className="aboutus-text">
+        </Col>
+        <Col className="aboutus-text">
           <h2>Our Story</h2>
           <p>
             Shimmer Jewellery was founded with a passion for timeless beauty and exquisite craftsmanship. For over a decade, we have been dedicated to creating unique, elegant pieces that celebrate life's precious moments.
@@ -31,8 +32,8 @@ const AboutUs = () => {
           <p>
             Discover our collections online or visit our boutique at <b>123 Gold Street, Gem City</b>.
           </p>
-        </div>
-      </div>
+        </Col>
+      </Row>
       <div className="aboutus-footer">
         <h3>Follow Our Journey</h3>
         <div className="aboutus-socials">

@@ -100,7 +100,8 @@
   margin-top: 1.5rem;
   color: #7c6a4d;
   font-size: 0.95rem;
-
+  position: relative;
+  z-index: 1;
   a {
     color: #dba063;
     font-weight: 600;

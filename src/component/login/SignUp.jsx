@@ -7,6 +7,7 @@ const SignUp = () => {
     const navigate = useNavigate();
     const submit = () => {
         console.log("submit data")
+        navigate("/login");
     }
   return (
     <div className="signup-container">
