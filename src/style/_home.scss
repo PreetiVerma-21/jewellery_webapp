@@ -96,13 +96,36 @@
 				font-size: 2rem;
 				margin-bottom: 1rem;
 			}
+			.btn {
+				background-color: #eabd83;
+				border-radius: 1rem;
+				// box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+				text-align: center;
+				min-width: 80px;
+				box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.45) inset,
+					0 -20px 10px -20px rgba(0, 0, 0, 0.45) inset;
+				color: white;
+				font-weight: 600;
+			}
 		}
 	}
 
 	.collection {
 		padding: 4rem 2rem;
 		background-color: #fff;
-		
+
+		--s: 10px; /* control the size*/
+		--c1: #faffff;
+		--c2: #fff7eb;
+
+		--c: #0000, var(--c1) 0.5deg 119.5deg, #0000 120deg;
+		--g1: conic-gradient(from 60deg at 56.25% calc(425% / 6), var(--c));
+		--g2: conic-gradient(from 180deg at 43.75% calc(425% / 6), var(--c));
+		--g3: conic-gradient(from -60deg at 50% calc(175% / 12), var(--c));
+		background: var(--g1), var(--g1) var(--s) calc(1.73 * var(--s)), var(--g2),
+			var(--g2) var(--s) calc(1.73 * var(--s)), var(--g3) var(--s) 0,
+			var(--g3) 0 calc(1.73 * var(--s)) var(--c2);
+		background-size: calc(2 * var(--s)) calc(3.46 * var(--s));
 
 		h2 {
 			text-align: center;
@@ -112,7 +135,7 @@
 			color: #7a522d;
 			font-family: "Times New Roman", Times, serif;
 		}
-		.card-col{
+		.card-col {
 			display: flex;
 			justify-content: center;
 		}
@@ -157,9 +180,22 @@
 			position: relative;
 			// display: flex;
 			// justify-content: center;
+			.vdo-section {
+				position: absolute;
+				left: -107px;
+				background-color: rgb(251 185 93 / 97%);
+				width: 483px;
+				height: 189px;
+				top: -32px;
+				border-radius: 0 6rem 6rem 0;
+				z-index: 0;
+			}
+
 			img {
 				width: 300px;
 				border-radius: 1rem;
+				z-index: 2;
+				position: relative;
 			}
 
 			.play-button {
@@ -175,7 +211,6 @@
 		}
 
 		.type-options {
-			
 			h2 {
 				margin-bottom: 1rem;
 			}
