@@ -1,8 +1,15 @@
 import React from 'react';
 import { MailOutlined, PhoneOutlined, EnvironmentOutlined } from '@ant-design/icons';
 import { Input, Button } from 'antd';
+import { useQuery } from '@tanstack/react-query';
 
 const ContactUs = () => {
+  const { data, isLoading, error } = useQuery({
+    queryKey: ['todos'],
+    queryFn: () => fetch('https://jsonplaceholder.typicode.com/todos').then(res => res.json())
+  });
+
+  console.log("tableData", data)
   return (
     <div className="contactus-container">
       <div className="contactus-card">
